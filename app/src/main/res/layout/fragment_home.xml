@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/toptxt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="-1dp"
+        android:background="#ffdab9"
+        android:fontFamily="@font/trocchi"
+        android:gravity="center"
+        android:text="Welcome, PHINMA-Popular                    Food Recipes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/toptxt"
+        android:layout_marginTop="0dp"
+        android:background="#ffdab9"
+        android:text="Let's see what is the menu for today!"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="-7dp"
+        android:background="@drawable/wave">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/movingimg"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="0dp">
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/loogo" />
+
+        <ImageView
+            android:layout_width="153dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/hatt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/bottom">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_below="@+id/movingimg"
+        android:layout_marginTop="-1dp">
+
+
+    </LinearLayout>
+
+</RelativeLayout>

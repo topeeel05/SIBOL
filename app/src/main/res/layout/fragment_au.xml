@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:fontFamily="@font/trocchi"
+                android:gravity="center"
+                android:text="ABOUT US"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:paddingTop="20dp"
+                android:background="#ffdab9"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/wave" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/white"
+                    android:src="@drawable/yujin"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="180dp"
+                    android:textAlignment="center"
+                    android:text="Yujin L. Aspiras"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="220dp"
+                    android:textAlignment="center"
+                    android:text="Project Manager"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="270dp"
+                    android:textAlignment="center"
+                    android:text="A Project Manager is a professional in charge of ensuring their teams complete all projects on time and within budget."
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="400dp"
+                    android:textAlignment="center"
+                    android:text="2 years of Experience"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/white"
+                    android:src="@drawable/christopher"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="180dp"
+                    android:textAlignment="center"
+                    android:text="Christopher Sean A. Fung"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="220dp"
+                    android:textAlignment="center"
+                    android:text="Mobile Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="270dp"
+                    android:textAlignment="center"
+                    android:text="Focus on developing software or systems for mobile devices. This role has become popular as more e-commerce and other digital interactions are taking place through smartphones."
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="400dp"
+                    android:textAlignment="center"
+                    android:text="3 years of Experience"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/white"
+                    android:src="@drawable/hans"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="180dp"
+                    android:textAlignment="center"
+                    android:text="Hans Oliver G. Alvear"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="220dp"
+                    android:textAlignment="center"
+                    android:text="Back End Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="270dp"
+                    android:textAlignment="center"
+                    android:text="Creating the server side of the application and filling it with user-oriented elements. Developing code and libraries that can be used an unlimited number of times."
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="400dp"
+                    android:textAlignment="center"
+                    android:text="3 years of Experience"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/white"
+                    android:src="@drawable/adrian"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="180dp"
+                    android:textAlignment="center"
+                    android:text="Adrian Aberin"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="220dp"
+                    android:textAlignment="center"
+                    android:text="Process consultant"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="270dp"
+                    android:textAlignment="center"
+                    android:text="A project management consultant plays the role of a planner, advisor, and a project management team leader to conceptualize and implement solutions that relate to quality or process improvements."
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="400dp"
+                    android:textAlignment="center"
+                    android:text="2 years of Experience"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="3in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_marginLeft="105dp"
+                    android:background="@color/white"
+                    android:src="@drawable/sheen"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="180dp"
+                    android:textAlignment="center"
+                    android:text="Sheena Suarez Pula"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="220dp"
+                    android:textAlignment="center"
+                    android:text="Front End Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="270dp"
+                    android:textAlignment="center"
+                    android:text="Front-end developers use HTML, CSS, and JavaScript to build the client side of a website."
+                    android:textStyle="italic"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="400dp"
+                    android:textAlignment="center"
+                    android:text="2 years of Experience"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

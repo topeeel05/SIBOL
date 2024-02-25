@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SfFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:fontFamily="@font/trocchi"
+                android:gravity="center"
+                android:text="FREQUENTLY ASKED QUESTIONS"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:background="#ffdab9"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/wave"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="CAN I SUBSTITUTE THIS INGREDIENT?"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingTop="80dp"
+                    android:text="I recommend using the specified ingredients listed in the recipe whenever possible for optimal results. I understand that you may have dietary restrictions or simply do not have a particular ingredient on hand, but please remember that by using a substitution, I cannot speak for how much this will change in the overall taste or texture of the dish without further recipe testing."
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="I TRIED ONE OF YOUR RECIPES BUT IT DID NOT TURN OUT. WHAT DID I DO WRONG?
+"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="110dp"
+                    android:textAlignment="center"
+                    android:text="That being said, I only share recipes that have been successful and well-tested in my own kitchen, but I understand that failures and mishaps can happen.
+
+Instead of blaming the recipe, it is important to remember that many factors are at play here that may result in a failed outcome. But with a little bit more information, we can troubleshoot what went wrong to have a successful turnaround next time."
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="WHAT IS THE BEST WAY TO STORE LEFTOVERS? HOW LONG WILL THIS KEEP?"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="110dp"
+                    android:textAlignment="center"
+                    android:text="As I am not an expert on food safety, I am not comfortable answering these questions. Methods for optimal food storage and shelf life should be based on good judgment and what you are personally comfortable with."
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="CAN YOU SHARE THE NUTRITIONAL INFORMATION FOR THIS RECIPE?"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="80dp"
+                    android:textAlignment="center"
+                    android:text="Unfortunately, as I am not a registered dietician, I am not comfortable sharing nutritional information for any of my recipes. I recommend utilizing online calorie counters at your discretion to obtain such information."
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="HOW MANY TIMES DID YOU TEST YOUR RECIPES?"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="80dp"
+                    android:textAlignment="center"
+                    android:text="I usually test each recipe at least 3 times, but may test some up to 10 times or more depending on the complexity of the dish or how well the final product turns out. Any recipe involving a dough will usually require more testing. I try to be as clear as possible with the types of ingredients I use and any important factors you should look out for in specific recipes, but most importantly, you should taste as you cook."
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="2in"
+                android:layout_margin="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/white">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"
+                    android:text="WHAT IS YOUR FAVORITE OIL TO COOK WITH?"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="80dp"
+                    android:textAlignment="center"
+                    android:text="I like to use a variety of oils when cooking since research on the health benefits of specific oils/fats may not be as conclusive as the media portrays it.
+When stir-frying or sautéing, you want to heat the pan first, then put the cooking oil in once the pan is hot and immediately add the first ingredient. This prevents the oil from burning as much.
+For higher temperature cooking where I know the oil will be heated for a longer time, I use grapeseed oil or avocado oil. Canola oil is good to use when you want a lower-cost oil with a neutral flavor."
+                    android:textStyle="italic"
+                    android:textSize="16dp"
+                    android:layout_gravity="center"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
