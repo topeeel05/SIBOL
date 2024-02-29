@@ -9,6 +9,7 @@ class DatabaseHelper(private val context: Context):
             SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION){
 
     companion object{
+        // Database constants
         private const val DATABASE_NAME = "UserDatabase.db"
         private const val DATABASE_VERSION = 1
         private const val TABLE_NAME = "data"
@@ -18,6 +19,7 @@ class DatabaseHelper(private val context: Context):
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
+        // Create the database table when the database is first created
         val createTableQuery = ("CREATE TABLE $TABLE_NAME (" +
                 "$COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "$COLUMN_USERNAME TEXT, " +
@@ -26,11 +28,13 @@ class DatabaseHelper(private val context: Context):
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+        // Drop and recreate the database table if the database version is upgraded
         val dropTableQuery = "DROP TABLE IF EXISTS $TABLE_NAME"
         db?.execSQL(dropTableQuery)
         onCreate(db)
     }
 
+    // Function to insert a new user into the database
     fun insertUser(username: String, password: String): Long {
         val values = ContentValues().apply {
             put(COLUMN_USERNAME, username)
@@ -40,14 +44,19 @@ class DatabaseHelper(private val context: Context):
         return db.insert(TABLE_NAME, null, values)
     }
 
+    // Function to check if a user with the given username and password exists in the database
     fun readUser(username: String, password: String): Boolean {
         val db = readableDatabase
         val selection = "$COLUMN_USERNAME = ? AND $COLUMN_PASSWORD = ?"
         val selectionArgs = arrayOf(username, password)
         val cursor = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null)
 
+        // Check if the cursor has any rows (user exists)
         val userExists = cursor.count > 0
+
+        // Close the cursor to avoid memory leaks
         cursor.close()
+
         return userExists
 
     }
