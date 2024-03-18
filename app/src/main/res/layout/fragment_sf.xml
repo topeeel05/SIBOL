@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".SfFragment">
 
     <ScrollView
@@ -28,8 +29,8 @@
                 android:textAlignment="center"
                 android:textSize="25dp"
                 android:paddingTop="20dp"
-                android:textStyle="bold"
-                android:background="#ffdab9"/>
+                android:background="#ffdab9"
+                android:textColor="@color/black"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -52,6 +53,7 @@
                     android:text="CAN I SUBSTITUTE THIS INGREDIENT?"
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -63,6 +65,7 @@
                     android:text="I recommend using the specified ingredients listed in the recipe whenever possible for optimal results. I understand that you may have dietary restrictions or simply do not have a particular ingredient on hand, but please remember that by using a substitution, I cannot speak for how much this will change in the overall taste or texture of the dish without further recipe testing."
                     android:textAlignment="center"
                     android:textSize="16dp"
+                    android:textColor="@color/peach"
                     android:textStyle="italic" />
 
             </androidx.cardview.widget.CardView>
@@ -85,6 +88,7 @@
 "
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -99,6 +103,7 @@
 Instead of blaming the recipe, it is important to remember that many factors are at play here that may result in a failed outcome. But with a little bit more information, we can troubleshoot what went wrong to have a successful turnaround next time."
                     android:textStyle="italic"
                     android:textSize="16dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -120,6 +125,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="WHAT IS THE BEST WAY TO STORE LEFTOVERS? HOW LONG WILL THIS KEEP?"
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -132,6 +138,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="As I am not an expert on food safety, I am not comfortable answering these questions. Methods for optimal food storage and shelf life should be based on good judgment and what you are personally comfortable with."
                     android:textStyle="italic"
                     android:textSize="16dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -153,6 +160,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="CAN YOU SHARE THE NUTRITIONAL INFORMATION FOR THIS RECIPE?"
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -165,6 +173,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="Unfortunately, as I am not a registered dietician, I am not comfortable sharing nutritional information for any of my recipes. I recommend utilizing online calorie counters at your discretion to obtain such information."
                     android:textStyle="italic"
                     android:textSize="16dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -186,6 +195,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="HOW MANY TIMES DID YOU TEST YOUR RECIPES?"
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -197,6 +207,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:textAlignment="center"
                     android:text="I usually test each recipe at least 3 times, but may test some up to 10 times or more depending on the complexity of the dish or how well the final product turns out. Any recipe involving a dough will usually require more testing. I try to be as clear as possible with the types of ingredients I use and any important factors you should look out for in specific recipes, but most importantly, you should taste as you cook."
                     android:textStyle="italic"
+                    android:textColor="@color/peach"
                     android:textSize="16dp"
                     android:layout_gravity="center"/>
 
@@ -219,6 +230,7 @@ Instead of blaming the recipe, it is important to remember that many factors are
                     android:text="WHAT IS YOUR FAVORITE OIL TO COOK WITH?"
                     android:textStyle="bold"
                     android:textSize="22dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
 
@@ -233,6 +245,7 @@ When stir-frying or sautéing, you want to heat the pan first, then put the cook
 For higher temperature cooking where I know the oil will be heated for a longer time, I use grapeseed oil or avocado oil. Canola oil is good to use when you want a lower-cost oil with a neutral flavor."
                     android:textStyle="italic"
                     android:textSize="16dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AuFragment">
 
     <ScrollView
@@ -25,6 +26,7 @@
                 android:fontFamily="@font/trocchi"
                 android:gravity="center"
                 android:text="ABOUT US"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:textSize="25dp"
                 android:paddingTop="20dp"
@@ -53,11 +55,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="180dp"
+                    android:paddingTop="130dp"
                     android:textAlignment="center"
                     android:text="Yujin L. Aspiras"
                     android:textStyle="bold"
                     android:textSize="25dp"
+                    android:textColor="@color/peach"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="170dp"
+                    android:textAlignment="center"
+                    android:text="Project Manager"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -65,29 +79,21 @@
                     android:layout_height="match_parent"
                     android:paddingTop="220dp"
                     android:textAlignment="center"
-                    android:text="Project Manager"
-                    android:textStyle="bold"
-                    android:textSize="28dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="270dp"
-                    android:textAlignment="center"
                     android:text="A Project Manager is a professional in charge of ensuring their teams complete all projects on time and within budget."
                     android:textStyle="italic"
                     android:textSize="20dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="400dp"
+                    android:paddingTop="350dp"
                     android:textAlignment="center"
                     android:text="2 years of Experience"
                     android:textStyle="bold"
                     android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -112,11 +118,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="180dp"
+                    android:paddingTop="130dp"
                     android:textAlignment="center"
                     android:text="Christopher Sean A. Fung"
                     android:textStyle="bold"
                     android:textSize="25dp"
+                    android:textColor="@color/peach"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="170dp"
+                    android:textAlignment="center"
+                    android:text="Mobile Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -124,29 +142,21 @@
                     android:layout_height="match_parent"
                     android:paddingTop="220dp"
                     android:textAlignment="center"
-                    android:text="Mobile Developer"
-                    android:textStyle="bold"
-                    android:textSize="28dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="270dp"
-                    android:textAlignment="center"
                     android:text="Focus on developing software or systems for mobile devices. This role has become popular as more e-commerce and other digital interactions are taking place through smartphones."
                     android:textStyle="italic"
                     android:textSize="20dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="400dp"
+                    android:paddingTop="370dp"
                     android:textAlignment="center"
                     android:text="3 years of Experience"
                     android:textStyle="bold"
-                    android:textSize="28dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -171,11 +181,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="180dp"
+                    android:paddingTop="130dp"
                     android:textAlignment="center"
                     android:text="Hans Oliver G. Alvear"
                     android:textStyle="bold"
                     android:textSize="25dp"
+                    android:textColor="@color/peach"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="170dp"
+                    android:textAlignment="center"
+                    android:text="Back End Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -183,29 +205,21 @@
                     android:layout_height="match_parent"
                     android:paddingTop="220dp"
                     android:textAlignment="center"
-                    android:text="Back End Developer"
-                    android:textStyle="bold"
-                    android:textSize="28dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="270dp"
-                    android:textAlignment="center"
                     android:text="Creating the server side of the application and filling it with user-oriented elements. Developing code and libraries that can be used an unlimited number of times."
                     android:textStyle="italic"
                     android:textSize="20dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="400dp"
+                    android:paddingTop="350dp"
                     android:textAlignment="center"
                     android:text="3 years of Experience"
                     android:textStyle="bold"
-                    android:textSize="28dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -230,11 +244,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="180dp"
+                    android:paddingTop="130dp"
                     android:textAlignment="center"
                     android:text="Adrian Aberin"
                     android:textStyle="bold"
                     android:textSize="25dp"
+                    android:textColor="@color/peach"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="170dp"
+                    android:textAlignment="center"
+                    android:text="Process consultant"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -242,29 +268,21 @@
                     android:layout_height="match_parent"
                     android:paddingTop="220dp"
                     android:textAlignment="center"
-                    android:text="Process consultant"
-                    android:textStyle="bold"
-                    android:textSize="28dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="270dp"
-                    android:textAlignment="center"
                     android:text="A project management consultant plays the role of a planner, advisor, and a project management team leader to conceptualize and implement solutions that relate to quality or process improvements."
                     android:textStyle="italic"
                     android:textSize="20dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="400dp"
+                    android:paddingTop="370dp"
                     android:textAlignment="center"
                     android:text="2 years of Experience"
                     android:textStyle="bold"
-                    android:textSize="28dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
@@ -289,11 +307,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="180dp"
+                    android:paddingTop="130dp"
                     android:textAlignment="center"
                     android:text="Sheena Suarez Pula"
                     android:textStyle="bold"
                     android:textSize="25dp"
+                    android:textColor="@color/peach"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="170dp"
+                    android:textAlignment="center"
+                    android:text="Front End Developer"
+                    android:textStyle="bold"
+                    android:textSize="28dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
@@ -301,29 +331,21 @@
                     android:layout_height="match_parent"
                     android:paddingTop="220dp"
                     android:textAlignment="center"
-                    android:text="Front End Developer"
-                    android:textStyle="bold"
-                    android:textSize="28dp"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="270dp"
-                    android:textAlignment="center"
                     android:text="Front-end developers use HTML, CSS, and JavaScript to build the client side of a website."
                     android:textStyle="italic"
                     android:textSize="20dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:paddingTop="400dp"
+                    android:paddingTop="350dp"
                     android:textAlignment="center"
                     android:text="2 years of Experience"
                     android:textStyle="bold"
-                    android:textSize="28dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/peach"
                     android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>

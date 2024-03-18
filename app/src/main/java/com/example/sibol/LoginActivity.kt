@@ -11,17 +11,13 @@ class LoginActivity : AppCompatActivity() {
     // Declare binding and databaseHelper variables
     private lateinit var binding: ActivityLoginBinding
     private lateinit var databaseHelper: DatabaseHelper
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
         // Inflate or show the layout using ViewBinding
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         // Initialize or call the DatabaseHelper
         databaseHelper = DatabaseHelper(this)
-
         // login button
         binding.loginButton.setOnClickListener{
             // Retrieve the entered username and password
@@ -30,7 +26,6 @@ class LoginActivity : AppCompatActivity() {
             // Call the loginDatabase function with entered credentials
             loginDatabase(loginUsername, loginPassword)
         }
-
         // Punta sa signup page
         binding.signupRedirect.setOnClickListener{
             val intent = Intent(this, SignupActivity::class.java)

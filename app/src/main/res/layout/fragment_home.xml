@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/toptxt"
         android:layout_width="match_parent"
@@ -34,8 +38,7 @@
         android:text="Let's see what is the menu for today!"
         android:textAlignment="center"
         android:gravity="center"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,46 +50,94 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/movingimg"
+
+    <TextView
+        android:id="@+id/bottxt"
         android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:layout_below="@+id/textView"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="0dp">
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="53dp"
+        android:background="#F8B878"
+        android:fontFamily="@font/trocchi"
+        android:gravity="center"
+        android:text="CONTACT US"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
 
-        <ImageView
-            android:layout_width="143dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="60dp"
-            android:background="@drawable/loogo" />
-
-        <ImageView
-            android:layout_width="153dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/hatt" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/bottxt2"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="456dp"
-        android:background="@drawable/bottom">
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="34dp"
+        android:background="#F8B878"
+        android:gravity="center"
+        android:text="0912 345 6789"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
 
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/bottxt3"
         android:layout_width="match_parent"
-        android:layout_height="337dp"
-        android:layout_below="@+id/movingimg"
-        android:layout_marginTop="0dp">
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="#F8B878"
+        android:fontFamily="@font/trocchi"
+        android:gravity="center"
+        android:text="sibolrecipe@gmail.com"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/bottxt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-1dp"
+        android:background="#F8B878"
+        android:gravity="center"
+        android:text="© SIBOL 2024"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:textStyle="bold" />
 
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="5550dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="1dp"
+            android:textColor="@color/peach"
+            android:text="" />
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

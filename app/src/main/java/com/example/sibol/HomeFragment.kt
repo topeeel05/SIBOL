@@ -5,6 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
+import retrofit2.Response
+import com.example.sibol.databinding.FragmentHomeBinding
+import androidx.lifecycle.liveData
+import androidx.lifecycle.Observer
+
+const val BASE_URL = "https://jsonplaceholder.typicode.com/"
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,20 +28,46 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val retrofitService = RetrofitInstance.getRetrofitInstance().create(ApiInterface::class.java)
+
+        val responseLiveData: LiveData<Response<Dataaa>> =
+            liveData {
+                val response = retrofitService.getDataaa()
+                emit(response)
+            }
+
+        responseLiveData.observe(viewLifecycleOwner, Observer { response ->
+            if (response.isSuccessful) {
+                val dataItem = response.body()
+                dataItem?.let {
+                    val dataList = it.menus
+                    for (dataItem in dataList) {
+                        val menuId = "Menu: ${dataItem.id} \n \n"
+                        val menuName = "${dataItem.name} \n \n"
+                        val menuImg = "${dataItem.image} \n \n"
+                        val menuDescription = "${dataItem.description} \n \n"
+                        val menuHtc = "How to Cook: ${dataItem.howtocook} \n \n"
+                        val menuPrice = "Total Cost: ${dataItem.price} \n \n"
+                        val menuIngre = "Ingredients: ${dataItem.ingredients} \n \n"
+                        binding.txtId.append("$menuId$menuName$menuImg$menuDescription$menuIngre$menuHtc$menuPrice")
+                    }
+                }
+            }
+        })
     }
 
     companion object {
